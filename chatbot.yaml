@@ -13,14 +13,10 @@ nlp:
   nbestPatterns: 1
   nbestIntents: 2
   nbestExamples: 3
-
-nlp:
   lengthLimit:
     enabled: true
     symbols: 100
     words: -1
-
-nlp:
   timeLimit:
     enabled: true
     timeout: 500
