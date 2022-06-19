@@ -26,4 +26,4 @@ messages:
     locales:
       ru: Что-то пошло не так.
       en: Failed on request processing.
-    defaultMessage: Что-то пошло не так.
+    defaultMessage: Я вас не поняла. Попробуйте сообщить мне название команды и секретное слово (Вездекод).
