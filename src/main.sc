@@ -4,8 +4,8 @@ patterns:
 theme: /
 
     state: Hello
-        q!: $hello *
-        a: Здравствуйте!
+        q!: *
+        a: q
         go!: /Can I Help You?
 
     state: Can I Help You?
