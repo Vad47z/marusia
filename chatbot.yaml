@@ -1,24 +1,33 @@
-0:
-  messages:
-    - Hello!
-    - I'm a Bot!
-  next: 1
+entryPoint: main.sc
+name: zb-cailapub
+botEngine: v2
+language: ru
 
-1:
-  messages:
-    - "What's your name?"
-  input:
-    type: text
-    key: user_name
-    when:
-      empty:
-        messages:
-          - "The name is empty!"
-          - "Let's try again.."
-        next: 1
-      not-empty:
-        next: 2
-2:
-  messages:
-    - "Nice to meet you, ${user_name}"
-  next: 3
+sts:
+  noMatchThreshold: 0.2
+caila:
+  noMatchThreshold: 0.2
+  
+nlp:
+  nbest: 3
+  nbestPatterns: 1
+  nbestIntents: 2
+  nbestExamples: 3
+
+nlp:
+  lengthLimit:
+    enabled: true
+    symbols: 100
+    words: -1
+
+nlp:
+  timeLimit:
+    enabled: true
+    timeout: 500
+
+messages:
+  onError:
+    locales:
+      ru: Что-то пошло не так.
+      en: Failed on request processing.
+    defaultMessage: Что-то пошло не так.
