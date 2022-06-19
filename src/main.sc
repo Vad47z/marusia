@@ -1,7 +1,10 @@
+patterns:
+    $hello = (салют|привет|здравствуй*|здарова|добрый (день|вечер))
+
 theme: /
 
     state: Hello
-        q!: привет
+        q!: $hello *
         a: Здравствуйте!
         go!: /Can I Help You?
 
