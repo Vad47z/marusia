@@ -24,6 +24,6 @@ nlp:
 messages:
   onError:
     locales:
-      ru: Что-то пошло не так 12.
+      ru: Что-то пошло не так.
       en: Failed on request processing.
     defaultMessage: Что-то пошло не так.
